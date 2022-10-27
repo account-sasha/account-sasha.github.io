@@ -1,0 +1,19 @@
+<% if (is_category()){ %>
+    <%- partial('_partial/category-title', {category: page.category}) %>
+<% } %>
+<% page.posts.each(function(post){ %>
+    <%- partial('_partial/article', {post: post, index: true}) %>
+<% }) %>
+<% if (page.total > 1){ %>
+    <nav id="page-nav">
+        <%
+            var prev_text = '<span class="arrow">←</span>' + __('prev');
+            var next_text = __('next') + '<span class="arrow">→</span>'
+        %>
+        <%- paginator({
+            prev_text: prev_text,
+            next_text: next_text,
+            escape: false
+        }) %>
+    </nav>
+<% } %>

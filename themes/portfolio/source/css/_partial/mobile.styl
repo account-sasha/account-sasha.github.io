@@ -1,0 +1,38 @@
+
+@keyframes overlay-menu__fade-in-animation {
+  0% {
+    opacity: 0
+    transform:translateY(.5em)
+  }
+
+  to {
+    opacity: 1;
+    transform:translateY(0)
+  }
+}
+
+@media mq-mobile
+  #mobile-nav
+    //animation: overlay-menu__fade-in-animation 3s ease-out
+    //animation-fill-mode: forwards
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    width: 100%
+    text-align: end
+    background: transparent
+    border-right: 1px solid #fff
+    .mobile-nav-on &
+      background: color-mobile-nav-background
+
+@media mq-mobile
+  .mobile-nav-link
+    display: block
+    color: color-mobile-nav-link
+    text-decoration: none
+    padding: 15px 20px
+    font-weight: 300
+    font-size: 1.125rem
+    &:hover
+      color: #fff

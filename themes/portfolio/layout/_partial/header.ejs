@@ -1,0 +1,23 @@
+<header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <nav id="main-nav">
+                <div class="main-nav-menu">
+                    <a class="main-nav-link main-nav-root" href="/">Arpan'a' (Offering)</a>
+                    <a id="main-nav-open" class="nav-icon">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                             aria-hidden="true" focusable="false">
+                            <rect x="4" y="7.5" width="16" height="1.5"></rect>
+                            <rect x="4" y="15" width="16" height="1.5"></rect>
+                        </svg>
+                    </a>
+                    <div class="main-nav-right">
+                        <% for (var i in theme.menu){ %>
+                            <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+                        <% } %>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,27 @@
+<div class="info">
+    <div class="info-header">
+        <% if (page.header_img_url){ %>
+            <img class="info-header-image"
+                 src="<%- url_for(page.header_img_url) %>"
+                 alt="<%- url_for(page.alt) %>"
+                 itemprop="image"
+            />
+        <% } %>
+        <h1 class="head"><%- page.value %></h1>
+        <hr class="separator">
+    </div>
+    <% if (page.about_page){ %>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="info-about-img">
+            <img alt="anandaarpana" src="<%- url_for("/img/a6af3-me.jpeg") %>" itemprop="image">
+        </div>
+    <% } %>
+    <% if (!page.about_page){ %>
+        <div class="space"></div>
+    <% } %>
+    <div class="info-reader-content<% if (page.about_page){ %> info-about-content<% } %>">
+        <%- page.content %>
+    </div>
+</div>
+

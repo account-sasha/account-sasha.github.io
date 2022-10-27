@@ -1,0 +1,106 @@
+.info
+  .space
+    margin-top: 1.5rem
+    height: 32px
+
+  .info-img
+    column(4, 10)
+
+    img
+      height: 320px
+      width: 320px
+      border-radius: 160px
+
+  .info-content
+    column(6, 10)
+    font-style: italic
+    color: color-foreground
+    font-weight: 300
+
+    .name
+      font-family: font-eb-garamond
+      font-size: 3.25rem
+      margin: 1em 0
+
+    .desc
+      font-size: 1.125rem
+      line-height: 1.6
+
+.info-header
+  max-width: 1000px
+  margin: 24px auto 0
+
+  .head
+    margin-bottom: clamp(2rem, 8vw, calc(4 * 1.5rem))
+    line-height: 1.15
+    font-size: clamp(2.75rem, 6vw, 3.25rem)
+    font-family: font-eb-garamond
+    font-style: italic
+    font-weight: 400
+
+  .separator
+    opacity: .4
+    color: color-foreground
+    border: none
+    border-bottom: 2px solid
+
+.info-header-image
+  width: 100%
+  height: auto
+  margin-bottom: clamp(2rem, 8vw, calc(4 * 1.5rem));
+
+.info-about-img
+  column(4, 10)
+  margin-top: 1.5rem
+
+  @media mq-mobile
+    display: initial
+    float: initial
+    width: initial
+    margin: initial
+
+  img
+    height: 320px
+    width: 320px
+    border-radius: 160px
+
+.info-about-author
+  margin: 0.78em 0
+  line-height: 1.2
+  font-family: font-eb-garamond
+  font-size: clamp(2.75rem, 6vw, 3.25rem)
+
+  @media mq-mobile
+    margin: 1.6em 0 0.83em 0
+
+.info-about-content
+  column(6, 10)
+  text-align: start !important
+
+  @media mq-mobile
+    display: initial
+    float: initial
+    width: initial
+    margin: initial
+
+.info-reader-content
+  margin-top: 1.5rem
+  color: color-foreground
+  font-weight: 300
+  font-style: italic
+  font-size: 1.125rem
+  line-height: 1.6
+  text-align: center
+
+  p
+    //display: inline-block
+    margin: 1em auto
+    //margin-top: 38px
+    max-width: 650px
+
+    &:first-child {
+      margin-top: 0
+    }
+
+    strong
+      font-weight: bold

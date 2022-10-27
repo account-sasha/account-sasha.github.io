@@ -1,0 +1,42 @@
+
+#page-nav
+  clearfix()
+  margin: block-margin auto
+  background: #fff
+  text-align: center
+  color: color-foreground
+  overflow: hidden
+  a, span
+    line-height: 1
+    height: 2.2ex
+    color: color-foreground
+    font-size: 1rem
+  a
+    text-decoration: underline
+    text-decoration-thickness: 1px
+    text-underline-offset: 0.25ch
+    &:hover
+      text-decoration-style: dashed
+      color: color-foreground
+    .arrow
+      display: inline-block
+      text-decoration: none
+  .prev
+    float: left
+    .arrow
+      margin-right: 1ch
+  .next
+    float: right
+    .arrow
+      margin-left: 1ch
+  .page-number
+    display: inline-block
+    padding: 0 3px
+    font-size: 1.125rem
+    font-weight: 300;
+    @media mq-mobile
+      display: none
+  .current
+    //color: color-default
+  .space
+    padding: 0 3px

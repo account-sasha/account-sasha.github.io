@@ -1,0 +1,100 @@
+#header
+  background-color: color-primary
+  height: banner-height
+  position: relative
+  border-bottom: 1px solid color-border
+  &:before, &:after
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    height: 40px
+  @media mq-mobile
+    height: mob-banner-height
+
+
+#header-outer
+  height: 100%
+  position: relative
+
+#header-inner
+  height: 100%
+  position: relative
+  overflow: hidden
+
+$logo-text
+  text-decoration: none
+  color: #fff
+  font-weight: 300
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
+
+#logo
+  @extend $logo-text
+  font-size: logo-size
+  line-height: logo-size
+  letter-spacing: 2px
+
+#main-nav
+  display: initial
+
+.main-nav-menu
+  width: 100%
+  margin-top: 4.9rem
+  display: flex
+  align-items: center
+  justify-content: space-between
+  @media mq-mobile
+    margin-top: 1.9rem
+
+$nav-link
+  float: left
+  color: #fcf5ed
+  font-weight: normal
+  text-decoration: none
+  text-underline-offset: 0.25ch
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2)
+  transition: opacity 0.2s
+  display: block
+  padding: 20px 15px
+  &:hover
+    text-decoration: underline;
+    text-decoration-style: solid;
+
+.main-nav-right
+  float: right;
+  @media mq-mobile
+    display: none
+
+.nav-icon
+  fill: currentColor
+  display: block
+  height: 24px
+  width: 24px
+
+.main-nav-link
+  @extend $nav-link
+  font-size: 18px
+  font-weight: 300
+  letter-spacing: normal
+
+.main-nav-root
+  padding: 20px 0
+  font-style: italic
+  text-decoration: underline
+  text-decoration-thickness: 1px
+  @media mq-mobile
+    display: initial
+  &:hover
+    text-decoration-thickness: 1px
+    text-decoration-style: dashed
+
+#main-nav-open
+  display: none
+  color: #fff
+  @media mq-mobile
+    display: block
+
+#main-nav-close
+  float: none
+  display: block
+  padding: 20px
