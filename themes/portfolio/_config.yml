@@ -1,10 +1,7 @@
 # Header
 menu:
-  About: /about
-  Dear Reader: /
-  Poetry: /poetry
-  Dedication: /dedication
-  Dictionary: /dictionary
+  Portfolio: /
+  Blog: /blog
 
 # Content
 excerpt_link: Read More
@@ -48,7 +45,7 @@ recent_posts_limits: 5
 # Miscellaneous
 google_analytics:
 gauges_analytics:
-favicon: /img/favicon.jpeg
+favicon: /img/favicon.png
 twitter:
 fb_admins:
 fb_app_id:
