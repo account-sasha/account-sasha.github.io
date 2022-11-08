@@ -1,7 +1,7 @@
 # Header
 menu:
 #  Portfolio: /
-  Blog: /blog
+  Home: /
   Archives: /archives
 #rss: /atom.xml
 #banner: "images/bench.jpg"
@@ -49,7 +49,7 @@ recent_posts_limits: 5
 # Miscellaneous
 google_analytics:
 gauges_analytics:
-favicon: /favicon.png
+favicon: /img/favicon.png
 twitter:
 fb_admins:
 fb_app_id:
