@@ -1,10 +1,10 @@
 # Header
 menu:
-  Portfolio: /
+#  Portfolio: /
   Blog: /blog
   Archives: /archives
-rss: /atom.xml
-banner: "images/bench.jpg"
+#rss: /atom.xml
+#banner: "images/bench.jpg"
 #banner: "images/banner.jpg"
 
 # Content
