@@ -104,7 +104,8 @@ theme: land
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://oauth2: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@github.com/o-dubrovskyi/o-dubrovskyi.github.io
-
-admin:
-  deployCommand: './hexo-deploy.sh'
+  repo:
+    github:
+      url: https://github.com/o-dubrovskyi/o-dubrovskyi.github.io.git
+      branch: gh-pages
+      token: $GITHUB_TOKEN
