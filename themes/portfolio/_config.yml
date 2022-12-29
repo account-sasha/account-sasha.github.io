@@ -43,7 +43,8 @@ show_count: false
 recent_posts_limits: 5
 
 # Miscellaneous
-google_analytics:
+#google_analytics: GTM-PDGLKRS
+google_analytics: G-68EP4FQTE0
 gauges_analytics:
 favicon: /img/favicon.png
 twitter:

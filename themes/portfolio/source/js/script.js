@@ -139,7 +139,6 @@
   //   console.log('body');
   // });
   $('#main-nav-close').on('click', mainNavToggle);
-    console.log($('#main-nav-open'));
 
   $('#wrap').on('click', function(){
     if (isMobileNavAnim || !$container.hasClass('mobile-nav-on')) return;
