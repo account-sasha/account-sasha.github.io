@@ -10,7 +10,7 @@
       </header>
     <% } %>
     <% if (!index){ %><div class="article-space"></div><% } %>
-    <div class="e-content article-entry" itemprop="articleBody">
+    <div class="e-content article-entry <% if (post.prose) { %>article-prose<% } %>" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
