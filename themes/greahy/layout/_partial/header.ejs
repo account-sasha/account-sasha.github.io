@@ -26,18 +26,18 @@
           <a id="nav-rss-link" class="nav-icon" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>"></a>
         <% } %>
         <% if (theme.instagram){ %>
-          <a id="nav-instagram-link" class="nav-icon" href="<%- url_for(theme.instagram) %>" title="<%= __('instagram') %>">
-              <img src="/img/instagram.svg" alt="<%= __('instagram') %>">
+          <a id="nav-instagram-link" href="<%- url_for(theme.instagram) %>" title="<%= __('instagram') %>">
+              <img src="/img/instagram.svg" class="nav-icon"  alt="<%= __('instagram') %>" width="20px" height="20px">
           </a>
         <% } %>
         <% if (theme.linkedin){ %>
-          <a id="nav-linkedin-link" class="nav-icon" href="<%- url_for(theme.linkedin) %>" title="<%= __('linkedin') %>">
-              <img src="/img/linkedin.svg" alt="<%= __('linkedin') %>">
+          <a id="nav-linkedin-link" href="<%- url_for(theme.linkedin) %>" title="<%= __('linkedin') %>">
+              <img src="/img/linkedin.svg" class="nav-icon" alt="<%= __('linkedin') %>" width="20px" height="20px">
           </a>
         <% } %>
         <% if (theme.youtube){ %>
-          <a id="nav-youtube-link" class="nav-icon" href="<%- url_for(theme.youtube) %>" title="<%= __('youtube') %>">
-              <img src="/img/youtube.svg" alt="<%= __('youtube') %>">
+          <a id="nav-youtube-link" href="<%- url_for(theme.youtube) %>" title="<%= __('youtube') %>">
+              <img src="/img/youtube.svg" class="nav-icon" alt="<%= __('youtube') %>" width="20px" height="20px">
           </a>
         <% } %>
 <!--        <a id="nav-search-btn" class="nav-icon" title="<%= __('search') %>"></a>-->
