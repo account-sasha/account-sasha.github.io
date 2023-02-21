@@ -10,5 +10,47 @@
       text-decoration: underline
 
 #footer-info
+  display: flex
+  justify-content: space-between
+  align-items: center
   line-height: line-height
   font-size: 0.85em
+
+  @media mq-mobile
+    flex-direction: column
+
+.donation-corner
+  display: flex
+  align-items: center
+
+  @media mq-mobile
+    flex-direction: column
+
+    > div
+      padding-top: 26px
+
+    > div:last-child
+      padding-bottom: 26px
+
+.donation-requisites-container
+  display: flex
+  align-items: center
+
+  @media mq-mobile
+    flex-direction: row
+
+.donation-requisites
+  display: flex
+  flex-direction: column
+
+.donation-icon
+  margin: 0 36px
+  height: 52px
+  width: 52px
+  border-radius: 26px
+  display: inline-block
+  background-image: url('/img/donation11.png')
+  background-size: cover
+
+  @media mq-mobile
+    margin: 0 0 0 24px
